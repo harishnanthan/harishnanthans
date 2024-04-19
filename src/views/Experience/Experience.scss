@@ -1,0 +1,35 @@
+@use "/src/styles/fonts";
+@use "/src/styles/breakPoints";
+@use "/src/styles/variables";
+@use "/src/styles/colors";
+
+.experience {
+  .experience__content {
+    padding: 2rem 0;
+
+    .experience__content-h2 {
+      font-family: fonts.$ff-Rommettoone-bold;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .experience__content-cards {
+      .quote_section {
+        font-size: 1.8rem;
+        text-align: center;
+        font-family: fonts.$ff-pitchsans-semibold;
+      }
+    }
+  }
+}
+
+@media all and (max-width: breakPoints.$vp-mobile) {
+  .experience {
+    .experience__content {
+      .experience__content-h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

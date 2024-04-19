@@ -1,0 +1,49 @@
+@use "/src/styles/fonts";
+@use "/src/styles/breakPoints";
+@use "/src/styles/variables";
+@use "/src/styles/colors";
+
+.card {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  background-color: colors.$white;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-bottom: 3rem;
+
+  .card_subHeading {
+    letter-spacing: .4rem;
+    font-family: fonts.$ff-pitchsans-semibold;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+  }
+
+  .card__heading {
+    font-family: fonts.$ff-Rommettoone-bold;
+    font-size: 2.8rem;
+  }
+
+  .card__desc {
+    letter-spacing: 0px;
+    font-family: fonts.$ff-pitchsans-regular;
+    font-size: 1.8rem;
+  }
+}
+
+@media all and (max-width: breakPoints.$vp-mobile) {
+  .card {
+    .card_subHeading {
+      letter-spacing: .3rem;
+      font-size: 1rem;
+    }
+
+    .card__heading {
+      font-size: 1.6rem;
+    }
+
+    .card__desc {
+      font-size: 1.4rem;
+    }
+  }
+}

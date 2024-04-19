@@ -1,0 +1,29 @@
+@use "/src/styles/fonts";
+@use "/src/styles/breakPoints";
+@use "/src/styles/variables";
+@use "/src/styles/colors";
+
+.works {
+  .works__content {
+    padding: 2rem 0;
+
+    .works__content-h2 {
+      font-family: fonts.$ff-Rommettoone-bold;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media all and (max-width: breakPoints.$vp-mobile) {
+  .works {
+    .works__content {
+      padding: 2rem 0;
+
+      .works__content-h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}

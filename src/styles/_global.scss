@@ -1,0 +1,19 @@
+@use "colors";
+@use "variables";
+@use "breakPoints";
+
+.divider {
+  height: .15rem;
+  border-radius: 50vmax;
+  background-color: colors.$black;
+}
+
+.fullWidth-withPadding {
+  padding: variables.$global-padding-lp;
+}
+
+@media all and (max-width: breakPoints.$vp-mobile) {
+  .fullWidth-withPadding {
+    padding: variables.$global-padding;
+  }
+}

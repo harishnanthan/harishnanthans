@@ -1,0 +1,18 @@
+@font-face {
+  font-family: Rommettoone;
+  src: url(../assets/fonts/Rammettone.woff2);
+}
+
+@font-face {
+  font-family: PitchSansRegular;
+  src: url(../assets/fonts/PitchSansWeb-Regular.woff2);
+}
+
+@font-face {
+  font-family: PitchSansSemiBold;
+  src: url(../assets/fonts/pitch-sans-web-semibold.woff2);
+}
+
+$ff-Rommettoone-bold: Rommettoone;
+$ff-pitchsans-regular: PitchSansRegular;
+$ff-pitchsans-semibold: PitchSansSemiBold;

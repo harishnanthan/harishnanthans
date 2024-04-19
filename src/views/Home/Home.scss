@@ -1,0 +1,79 @@
+@use "/src/styles/fonts";
+@use "/src/styles/breakPoints";
+@use "/src/styles/variables";
+@use "/src/styles/colors";
+
+.home {
+  .home_intro {
+    padding: 5rem 0 2rem 0;
+
+    .home_intro_h1 {
+      font-size: 5rem;
+      font-family: Rommettoone;
+      line-height: 7rem;
+
+      span {
+        position: relative;
+        z-index: -1;
+        &::after {
+          content: "";
+          position: absolute;
+          height: 1rem;
+          width: 100%;
+          bottom: 0;
+          background-color: colors.$accent-color;
+          opacity: .4;
+          transform: translateX(-100%);
+        }
+      }
+    }
+
+    .home_intro_p {
+      margin: 3rem 0;
+      font-size: 2rem;
+      font-family: fonts.$ff-pitchsans-regular;
+
+      span {
+        font-family: fonts.$ff-pitchsans-semibold;
+      }
+    }
+
+    .home_intro_social_links {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      gap: 1rem;
+    
+      li {
+        width: 4rem;
+      }
+    }
+  }
+}
+
+@media all and (max-width: breakPoints.$vp-mobile) {
+  .home {
+    .home_intro {
+      .home_intro_h1 {
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+      }
+
+      .home_intro_p {
+        margin: 2rem 0;
+        font-size: 1.6rem;
+      }
+
+      .home_intro_social_links {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        gap: 1rem;
+      
+        li {
+          width: 5rem;
+        }
+      }
+    }
+  }
+}
