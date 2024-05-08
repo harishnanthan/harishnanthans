@@ -1,10 +1,13 @@
+import { motion } from "framer-motion";
 import { Email, Github, LinkedIn } from "../../assets/icons/socialIcons";
 import "./Home.scss";
 
 const Home: React.FunctionComponent = () => (
   <div className="home fullWidth-withPadding">
     <div className="home_intro">
-      <h1 className="home_intro_h1">
+      <h1
+        className="home_intro_h1"
+      >
         Hello, I'm Harish, <br />
         <span>Full Stack Developer</span> && <br />
         <span>Pragmatic Programmer</span>...
