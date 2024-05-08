@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { Email, Github, LinkedIn } from "../../assets/icons/socialIcons";
 import "./Home.scss";
 
