@@ -1,17 +1,27 @@
 import { motion } from "framer-motion";
 import "./Card.scss";
+import { useEffect, useState } from "react";
+import githubAPI from "../../api/octokit";
 
-type CardProps = {
-  subtext?: string;
-  header?: string;
-  content?: string;
+type RepoData = {
+  language: string;
+  description: string;
 };
 
-const Card: React.FunctionComponent<CardProps> = ({
-  subtext,
-  header,
-  content,
-}) => {
+type CardProps = {
+  name: string;
+};
+
+const Card: React.FunctionComponent<CardProps> = ({ name }) => {
+  const [repoData, setRepoData] = useState<RepoData | null>(null);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+
+  useEffect(() => {
+      setIsLoading(true);
+      githubAPI.GET_REPO(name).then(({ data }) => setRepoData(data)).finally(() => setIsLoading(false));
+  }, [name]);
+
+  console.log(repoData);
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -20,9 +30,14 @@ const Card: React.FunctionComponent<CardProps> = ({
       viewport={{ once: false }}
       className="card"
     >
-      <p className="card_subHeading">{subtext}</p>
-      <p className="card__heading">{header}</p>
-      <p className="card__desc">{content}</p>
+      {isLoading && <p>Loading...</p>}
+      {repoData && (
+        <>
+          <p className="card__subHeading">{repoData.language}</p>
+          <p className="card__heading">{name}</p>
+          <p className="card__description">{repoData.description}</p>
+        </>
+      )}
     </motion.div>
   );
 };

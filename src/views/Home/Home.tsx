@@ -24,12 +24,12 @@ const Home: React.FunctionComponent = () => (
           </a>
         </li>
         <li>
-          <a href="mailto:harishnanthans@gmail.com">
+          <a href="https://github.com/harishnanthan">
             <Github />
           </a>
         </li>
         <li>
-          <a href="mailto:harishnanthans@gmail.com">
+          <a href="https://www.linkedin.com/in/harishnanthans">
             <LinkedIn />
           </a>
         </li>
