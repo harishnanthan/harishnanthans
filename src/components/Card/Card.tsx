@@ -30,7 +30,7 @@ const Card: React.FunctionComponent<CardProps> = ({ name }) => {
       viewport={{ once: false }}
       className="card"
     >
-      {isLoading && <p>Loading...</p>}
+      {isLoading && <p className="card__subHeading">Loading...</p>}
       {repoData && (
         <>
           <p className="card__subHeading">{repoData.language}</p>
