@@ -4,37 +4,48 @@
 @use "/src/styles/colors";
 
 .card {
-  padding: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: .5rem;
-  background-color: colors.$white;
-  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  margin-bottom: 3rem;
 
-  .card__subHeading {
-    letter-spacing: .4rem;
-    font-family: fonts.$ff-pitchsans-semibold;
-    font-size: 1.3rem;
-    text-transform: uppercase;
+  .card__img {
+    overflow: hidden;
+    border: variables.$border-width--small solid colors.$color--black;
+    width: 100%;
+    img {
+      z-index: -1;
+      height: 18rem;
+      display: block;
+      width: 100%;
+      image-rendering: optimizeSpeed;
+      object-fit: cover;
+    }  
   }
 
-  .card__heading {
-    font-family: fonts.$ff-Rommettoone-bold;
-    font-size: 2.8rem;
-  }
+  .card__block {
+    margin-top: 1.5rem;
+    .card__title {
+      font-family: fonts.$font-latin--display;
+      font-weight: 500;;
+      font-size: variables.$font-size--16;
 
-  .card__description {
-    letter-spacing: 0px;
-    font-family: fonts.$ff-pitchsans-regular;
-    font-size: 1.5rem;
+      display: flex;
+      gap: 1rem;
+      align-items: center;
+
+      margin-bottom: .5rem;
+    }
+    .card__desc {
+      font-family: fonts.$font-latin--display;
+      max-width: 95%;
+      font-size: variables.$font-size--14;
+      font-weight: 300;
+      letter-spacing: 0.005rem;
+    }
   }
 }
 
 @media all and (max-width: breakPoints.$vp-mobile) {
   .card {
     .card__subHeading {
-      letter-spacing: .3rem;
+      letter-spacing: 0.3rem;
       font-size: 1rem;
     }
 

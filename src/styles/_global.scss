@@ -1,19 +1,88 @@
 @use "colors";
 @use "variables";
 @use "breakPoints";
+@use "fonts";
 
-.divider {
-  height: .15rem;
-  border-radius: 50vmax;
-  background-color: colors.$black;
+// .fullWidth-withPadding {
+//   padding: variables.$global-padding-lp;
+// }
+
+// @media all and (max-width: breakPoints.$vp-mobile) {
+//   .fullWidth-withPadding {
+//     padding: variables.$global-padding;
+//   }
+// }
+
+// BORDERS
+
+.border-b {
+  border-bottom: variables.$border-width--hairline solid colors.$color--grey15;
 }
 
-.fullWidth-withPadding {
-  padding: variables.$global-padding-lp;
+.border-l {
+  border-left: variables.$border-width--hairline solid colors.$color--grey15;
 }
 
-@media all and (max-width: breakPoints.$vp-mobile) {
-  .fullWidth-withPadding {
-    padding: variables.$global-padding;
-  }
+.border-r {
+  border-right: variables.$border-width--hairline solid colors.$color--grey15;
 }
+
+.border-t {
+  border-top: variables.$border-width--hairline solid colors.$color--grey15;
+}
+
+// tags
+.accordion__tag {
+  background-color: colors.$color--blue30;
+  color: colors.$color--white;
+  font-family: fonts.$font-latin--display;
+  font-weight: 500;
+  border-radius: variables.$border-radius;
+  font-size: variables.$font-size--12;
+  padding: 0.5rem;
+  text-transform: uppercase;
+}
+
+.green-highlight {
+  display: inline-block;
+  background: linear-gradient(
+      100deg,
+      #b8ffaf00 1%,
+      #b8ffaf 2.5%,
+      #b8ffaf80 5.7%,
+      #b8ffaf1a 93%,
+      #b8ffafb4 95%,
+      #b8ffaf00 98%
+    ),
+    linear-gradient(182deg, #b8ffaf00, #b8ffaf4d 8%, #b8ffaf00 15%);
+}
+
+.pink-highlight {
+  display: inline-block;
+  background: linear-gradient(
+      100deg,
+      #ffafd400 1%,
+      #ffafd4 2.5%,
+      #ffafd480 5.7%,
+      #ffafd41a 93%,
+      #ffafd4b4 95%,
+      #ffafd400 98%
+    ),
+    linear-gradient(182deg, #ffafd400, #ffafd44d 8%, #ffafd400 15%);
+}
+
+.blue-highlight {
+  display: inline-block;
+  background: linear-gradient(
+      100deg,
+      #afd7ff00 1%,
+      #afd7ff 2.5%,
+      #afd7ff80 5.7%,
+      #afd7ff1a 93%,
+      #afd7ffb4 95%,
+      #afd7ff00 98%
+    ),
+    linear-gradient(182deg, #afd7ff00, #afd7ff4d 8%, #afd7ff00 15%);
+}
+
+

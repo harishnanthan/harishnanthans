@@ -1,0 +1,47 @@
+@use "/src/styles/fonts";
+@use "/src/styles/breakPoints";
+@use "/src/styles/variables";
+@use "/src/styles/colors";
+
+.nav__wrapper {
+  width: 100vw;
+  height: variables.$nav-height;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: variables.$padding;
+
+  font-family: fonts.$font-latin--display;
+
+  .nav__wrapper-logo {
+    cursor: pointer;
+  }
+
+  .nav__wrapper-place {
+    font-size: variables.$font-size--14;
+    font-weight: 300;
+    ul {
+      list-style: none;
+
+      display: flex;
+      gap: 4rem;
+
+      a {
+        cursor: pointer;
+        // border-radius: variables.$border-radius;
+        // padding: variables.$button-padding;
+        color: colors.$color--black;
+        text-decoration: none;
+      }
+
+      a:hover,
+      a.active {
+        text-decoration: underline;
+        // text-decoration-thickness: variables.$border-width--medium;
+        // background-color: colors.$color--grey60;
+      }
+    }
+  }
+}

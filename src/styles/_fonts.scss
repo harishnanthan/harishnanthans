@@ -13,6 +13,122 @@
   src: url(../assets/fonts/pitch-sans-web-semibold.woff2);
 }
 
+// MUST
+@font-face {
+  font-family: Canopee;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Regular.woff2);
+}
+
+@font-face {
+  font-family: EditorialNewLight;
+  src: url(../assets/fonts/PPEditorialNew-Ultralight.otf);
+}
+
+@font-face {
+  font-family: EditorialNewBold;
+  src: url(../assets/fonts/PPEditorialNew-Ultrabold.otf);
+}
+
 $ff-Rommettoone-bold: Rommettoone;
 $ff-pitchsans-regular: PitchSansRegular;
 $ff-pitchsans-semibold: PitchSansSemiBold;
+
+$ff-headings: Canopee;
+$ff-para-light: EditorialNewLight;
+$ff-para-bold: EditorialNewBold;
+
+// FONTS
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Text Extra Light;
+  font-weight: 200;
+  font-style: normal;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Thin.woff2)
+    format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Text Light;
+  font-weight: 300;
+  font-style: normal;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Light.woff2)
+    format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Text Book;
+  font-weight: 400;
+  font-style: normal;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Regular.woff2)
+    format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Text Medium;
+  font-weight: 500;
+  font-style: normal;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Medium.woff2)
+    format("woff");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Text Bold;
+  font-weight: 700;
+  font-style: normal;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/text/Universal-Sans-Text-Bold.woff2)
+    format("woff");
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Display;
+  font-style: normal;
+  font-weight: 700;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/display/Universal-Sans-Display-Bold.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Display;
+  font-style: normal;
+  font-weight: 500;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/display/Universal-Sans-Display-Medium.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Display;
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/display/Universal-Sans-Display-Regular.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Display;
+  font-style: normal;
+  font-weight: 300;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/display/Universal-Sans-Display-Light.woff2) format("woff2")
+}
+
+@font-face {
+  font-display: swap;
+  font-family: Universal Sans Display;
+  font-style: normal;
+  font-weight: 100;
+  src: url(https://digitalassets.tesla.com/tesla-design-system/raw/upload/static/fonts/universal-sans-2/web/display/Universal-Sans-Display-Thin.woff2) format("woff2")
+}
+
+$font-latin: "Universal Sans Text Book" !important;
+$font-latin--extra-light: "Universal Sans Text Extra Light" !important;
+$font-latin--light: "Universal Sans Text Light" !important;
+$font-latin--medium: "Universal Sans Text Medium" !important;
+$font-latin--bold: "Universal Sans Text Bold" !important;
+$font-latin--display: "Universal Sans Display" !important;
+$backup-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif;

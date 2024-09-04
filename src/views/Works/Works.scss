@@ -4,13 +4,22 @@
 @use "/src/styles/colors";
 
 .works {
+  padding: variables.$padding;
+  margin: calc(variables.$section-gap + 2rem) 0 variables.$section-gap;
   .works__content {
-    padding: 2rem 0;
 
     .works__content-h2 {
-      font-family: fonts.$ff-Rommettoone-bold;
-      font-size: 3rem;
-      margin-bottom: 2rem;
+      font-family: fonts.$font-latin--display;
+      font-size: variables.$font-size--28;
+      font-weight: 500;
+      margin-bottom: 3rem;
+    }
+
+    .works__content-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: max-content;
+      gap: 3rem;
     }
   }
 }
@@ -23,6 +32,11 @@
       .works__content-h2 {
         font-size: 2rem;
         margin-bottom: 2rem;
+      }
+      .works__content-cards {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 4rem;
       }
     }
   }

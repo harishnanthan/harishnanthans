@@ -1,43 +1,44 @@
 import { motion } from "framer-motion";
 import "./Card.scss";
-import { useEffect, useState } from "react";
-import githubAPI from "../../api/octokit";
-
-type RepoData = {
-  language: string;
-  description: string;
-};
+import { useNavigate } from "react-router-dom";
 
 type CardProps = {
-  name: string;
+  title: string;
+  techStacks: [string];
+  smallDescription: string;
+  titleImageUrl: string;
 };
 
-const Card: React.FunctionComponent<CardProps> = ({ name }) => {
-  const [repoData, setRepoData] = useState<RepoData | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+const Card: React.FunctionComponent<CardProps> = (props) => {
+  const { title, techStacks, smallDescription, titleImageUrl } = props;
+  const navigate = useNavigate();
 
-  useEffect(() => {
-      setIsLoading(true);
-      githubAPI.GET_REPO(name).then(({ data }) => setRepoData(data)).finally(() => setIsLoading(false));
-  }, [name]);
+  const clickHandler = () => navigate('/projects/title')
 
-  console.log(repoData);
   return (
     <motion.div
+      onClick={clickHandler}
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       transition={{ duration: 1 }}
       viewport={{ once: false }}
       className="card"
     >
-      {isLoading && <p className="card__subHeading">Loading...</p>}
-      {repoData && (
-        <>
-          <p className="card__subHeading">{repoData.language}</p>
-          <p className="card__heading">{name}</p>
-          <p className="card__description">{repoData.description}</p>
-        </>
-      )}
+      <>
+        <div className="card__img">
+          <motion.img
+            whileHover={{ scale: 1.1 }}
+            src={titleImageUrl}
+          ></motion.img>
+        </div>
+        <div className="card__block">
+          <div className="card__title">
+            <h3>{title}</h3>
+            <span className="accordion__tag">{techStacks[0]}</span>
+          </div>
+          <p className="card__desc">{smallDescription}</p>
+        </div>
+      </>
     </motion.div>
   );
 };

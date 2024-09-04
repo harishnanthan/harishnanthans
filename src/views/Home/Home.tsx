@@ -1,40 +1,27 @@
-import { Email, Github, LinkedIn } from "../../assets/icons/socialIcons";
+import { motion } from "framer-motion";
 import "./Home.scss";
 
 const Home: React.FunctionComponent = () => (
-  <div className="home fullWidth-withPadding">
+  <div className="home">
     <div className="home_intro">
-      <h1
-        className="home_intro_h1"
-      >
-        Hello, I'm Harish, <br />
-        <span>Full Stack Developer</span> && <br />
-        <span>Pragmatic Programmer</span>...
-      </h1>
-      <p className="home_intro_p">I have 2 years' experience at Tekion</p>
+      <motion.h1
+       className="home_intro_h1">
+        <span className="blue-highlight">Full-Stack Developer</span>{" "}
+        <i>with a</i>
+        <span className="blue-highlight">Pragmatic</span>{" "}
+        <i>Mindset.</i>
+      </motion.h1>
       <p className="home_intro_p">
-        I value <span>clarity, empathy,</span> and <span>integrity</span> above
-        all else. These ideals guide my approach to problem solving and life in
-        general
+        I specialize in crafting seamless digital
+        experiences from the ground up. 
+        My expertise spans building <b className="pink-highlight">pixel-perfect frontends</b> that captivate 
+        users and developing robust, <b className="pink-highlight">high-performance backends</b> that ensure efficiency and scalability. I
+        thrive on solving complex problems with a <b className="pink-highlight">pragmatic and
+        solution-oriented mindset</b>, ensuring each line of code serves a purpose
+        and enhances the overall product.
       </p>
-      <ul className="home_intro_social_links">
-        <li>
-          <a href="mailto:harishnanthans@gmail.com">
-            <Email />
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/harishnanthan">
-            <Github />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/harishnanthans">
-            <LinkedIn />
-          </a>
-        </li>
-      </ul>
     </div>
+    <button>Get My Resume</button>
   </div>
 );
 

@@ -1,0 +1,35 @@
+@use "/src/styles/fonts";
+@use "/src/styles/breakPoints";
+@use "/src/styles/variables";
+@use "/src/styles/colors";
+
+.contact__socialLinks {
+  display: inline-block;
+  width: 100vw;
+  padding: variables.$padding;
+  ul {
+    margin: 0;
+    font-size: variables.$font-size--14;
+    list-style: none;
+    font-family: fonts.$font-latin--display;
+    font-weight: 500;
+
+    display: flex;
+    padding: 0;
+    gap: 1rem;
+
+    padding: 3rem 0;
+
+    a {
+      color: colors.$color--black;
+      text-decoration: none;
+    }
+
+    img {
+      margin-left: 1rem;
+      display: inline;
+      width: 1.4rem;
+      width: 1.4rem;
+    }
+  }
+}

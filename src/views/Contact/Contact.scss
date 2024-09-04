@@ -1,0 +1,55 @@
+@use "/src/styles/fonts";
+@use "/src/styles/breakPoints";
+@use "/src/styles/variables";
+@use "/src/styles/colors";
+
+.contact__wrapper {
+  // margin-bottom: 5rem;
+
+  .contact__content {
+    padding: 2rem 0;
+
+    .contact__content-h2 {
+      font-family: fonts.$ff-headings;
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      font-family: fonts.$ff-para-light;
+      font-size: 2rem;
+    }
+  }
+
+  .contact__wrapper-block {
+    .contact__form {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .input {
+        border: none;
+        border-bottom: 1px solid #d1d1d1;
+        font-size: 1.4rem;
+        font-family: fonts.$ff-para-light;
+      }
+
+      button {
+        font-family: fonts.$ff-para-light;
+        padding: 0.5rem 0;
+        font-size: 1.4rem;
+        background-color: #c03f13;
+        border: 1px solid transparent;
+        border-radius: 5px;
+        color: white;
+
+        &:hover {
+          color: #c03f13;
+          background-color: white;
+          border: 1px solid #c03f13;
+        }
+      }
+    }
+  }
+}

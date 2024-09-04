@@ -1,0 +1,165 @@
+@use "/src/styles/fonts";
+@use "/src/styles/breakPoints";
+@use "/src/styles/variables";
+@use "/src/styles/colors";
+
+.aboutMe__wrapper {
+  padding: variables.$padding;
+
+  .aboutMe__content {
+    padding: 2rem 0;
+    margin-bottom: 3rem;
+
+    .aboutMe__content-h2 {
+      font-family: fonts.$font-latin--display;
+      font-size: variables.$font-size--30;
+      margin-bottom: 1rem;
+    }
+
+    .aboutMe__content-h3 {
+      font-family: fonts.$font-latin--display;
+      font-size: variables.$font-size--18;
+      font-weight: 400;
+    }
+  }
+
+  .aboutMe__content-p {
+    font-size: variables.$font-size--15;
+    font-family: fonts.$font-latin--display;
+    line-height: variables.$basic-line-height;
+    text-align: justify;
+    font-weight: 300;
+  }
+
+  .aboutMe__workBlock {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12rem;
+
+    .workBlock__wrapper {
+      position: relative;
+
+      img {
+        position: absolute;
+        top: 50%;
+        left: 105%;
+        transform: translateY(-50%);
+      }
+      .workBlock__wrapper-number {
+        font-family: fonts.$font-latin--display;
+        font-size: variables.$font-size--16;
+        margin-bottom: 0.5rem;
+      }
+
+      .workBlock__wrapper-content {
+        h3 {
+          font-family: fonts.$font-latin--display;
+          font-size: variables.$font-size--16;
+          margin-bottom: 1rem;
+        }
+
+        p {
+          font-family: fonts.$font-latin--display;
+          font-size: variables.$font-size--14;
+          font-weight: 300;
+        }
+      }
+    }
+  }
+
+  .aboutMe__skillBlock {
+    margin-bottom: 5rem;
+    border-left: variables.$border-width--small solid colors.$color--grey15;
+
+    header {
+      font-size: variables.$font-size--18;
+      font-family: fonts.$font-latin--display;
+      display: flex;
+      cursor: pointer;
+      padding: 2rem;
+    }
+  }
+
+  .aboutMe__testimonials-Block {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      "card1 card1 card1 card2 card2"
+      "card3 card3 card4 card4 card4";
+    gap: 3rem;
+
+    .testimonial__card {
+      border: variables.$border-width--small solid colors.$color--grey10;
+      font-family: fonts.$font-latin--display;
+      font-weight: 300;
+      height: auto;
+      border-radius: variables.$border-radius;
+
+      .testimonial__card-border {
+        padding: 1rem;
+        border-radius: variables.$border-radius;
+        height: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .testimonial__card-card {
+        font-size: variables.$font-size--14;
+        font-style: italic;
+      }
+
+      .testimonial__card-who {
+        margin-top: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          width: 3.8rem;
+          aspect-ratio: 1 / 1;
+          border-radius: 50%;
+          border: variables.$border-width--small solid colors.$color--black;
+          filter: grayscale(100%);
+        }
+
+        .testimonial__card-who-is {
+          h3 {
+            font-family: fonts.$font-latin--display;
+            font-size: variables.$font-size--16;
+            font-weight: 500;
+
+            img {
+              border-radius: inherit;
+              border: inherit;
+              margin-left: 0.5rem;
+              display: inline;
+              width: 1.4rem;
+              width: 1.4rem;
+            }
+          }
+          p {
+            font-size: variables.$font-size--14;
+          }
+        }
+      }
+    }
+  }
+
+  .testimonial__card1 {
+    grid-area: card1;
+  }
+
+  .testimonial__card2 {
+    grid-area: card2;
+  }
+
+  .testimonial__card3 {
+    grid-area: card3;
+  }
+
+  .testimonial__card4 {
+    grid-area: card4;
+  }
+}
