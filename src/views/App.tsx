@@ -8,6 +8,7 @@ import Works from "./Works";
 import Footer from "../components/Footer";
 import Projects from "./Projects";
 import { useEffect } from "react";
+import Contact from "./Contact";
 
 const App: React.FunctionComponent = () => {
   useEffect(() => {
@@ -40,7 +41,15 @@ const App: React.FunctionComponent = () => {
             </>
           }
         />
-        <Route path="about" element={<AboutMe />} />
+        <Route
+          path="about"
+          element={
+            <>
+              <AboutMe />
+              <Contact />
+            </>
+          }
+        />
         <Route path="/projects/:id" element={<Projects />} />
         <Route path="*" element={<>No Match</>} />
       </Route>

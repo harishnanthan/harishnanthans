@@ -4,21 +4,20 @@
 @use "/src/styles/colors";
 
 .contact__wrapper {
-  // margin-bottom: 5rem;
-
+  padding: variables.$padding;
   .contact__content {
     padding: 2rem 0;
 
     .contact__content-h2 {
-      font-family: fonts.$ff-headings;
-      font-size: 3rem;
-      font-weight: 600;
+      font-family: fonts.$font-latin--display;
+      font-size: variables.$font-size--30;
       margin-bottom: 2rem;
     }
 
     p {
-      font-family: fonts.$ff-para-light;
-      font-size: 2rem;
+      font-family: fonts.$font-latin--display;
+      font-size: variables.$font-size--18;
+      font-weight: 300;
     }
   }
 
@@ -32,23 +31,19 @@
         border: none;
         border-bottom: 1px solid #d1d1d1;
         font-size: 1.4rem;
-        font-family: fonts.$ff-para-light;
+        font-family: fonts.$font-latin--display;
+        font-weight: 300;
       }
 
       button {
-        font-family: fonts.$ff-para-light;
-        padding: 0.5rem 0;
-        font-size: 1.4rem;
-        background-color: #c03f13;
-        border: 1px solid transparent;
-        border-radius: 5px;
-        color: white;
-
-        &:hover {
-          color: #c03f13;
-          background-color: white;
-          border: 1px solid #c03f13;
-        }
+        font-family: fonts.$font-latin--display;
+        background-color: colors.$color--blue30;
+        color: colors.$color--white;
+        font-size: variables.$font-size--15;
+        border-radius: variables.$border-radius;
+        outline: none;
+        border: none;
+        padding: 0.8rem 1.2rem;
       }
     }
   }

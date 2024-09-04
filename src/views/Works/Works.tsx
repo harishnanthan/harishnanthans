@@ -9,7 +9,13 @@ const Works: React.FunctionComponent = () => {
         <h2 className="works__content-h2">Selected Works</h2>
         <div className="works__content-cards">
           {WORKS.map((repo) => (
-            <Card key={repo.title} {...repo} />
+            <Card
+              key={repo.title}
+              title={repo.title}
+              techStacks={["New"]}
+              smallDescription={repo.smallDescription}
+              titleImageUrl={repo.titleImageUrl}
+            />
           ))}
         </div>
       </div>

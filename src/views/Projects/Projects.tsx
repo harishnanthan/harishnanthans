@@ -92,9 +92,27 @@ const Projects: React.FunctionComponent = () => {
       <div className="next_projects__wrapper">
         <h2>Next Projects!</h2>
         <div className="next_projects">
-          <Card key={1} {...WORKS[0]} />
-          <Card key={1} {...WORKS[1]} />
-          <Card key={1} {...WORKS[2]} />
+          <Card
+            key={1}
+            title={WORKS[0].title}
+            techStacks={["New"]}
+            smallDescription={WORKS[0].smallDescription}
+            titleImageUrl={WORKS[0].titleImageUrl}
+          />
+           <Card
+            key={1}
+            title={WORKS[1].title}
+            techStacks={["New"]}
+            smallDescription={WORKS[1].smallDescription}
+            titleImageUrl={WORKS[1].titleImageUrl}
+          />
+           <Card
+            key={1}
+            title={WORKS[2].title}
+            techStacks={["New"]}
+            smallDescription={WORKS[2].smallDescription}
+            titleImageUrl={WORKS[2].titleImageUrl}
+          />
         </div>
       </div>
     </div>

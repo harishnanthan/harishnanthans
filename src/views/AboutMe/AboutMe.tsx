@@ -1,7 +1,7 @@
-import { motion, AnimatePresence } from "framer-motion";
-import { useState } from "react";
+// import { motion, AnimatePresence } from "framer-motion";
+// import { useState } from "react";
 import "./AboutMe.scss";
-import { SKILLS, WORK_FLOW } from "../../constants";
+import { WORK_FLOW } from "../../constants";
 
 const testimonials = [
   {
@@ -42,67 +42,67 @@ const testimonials = [
   },
 ];
 
-const Accordion = ({ id, expanded, setExpanded, contents }) => {
-  const isOpen = id === expanded;
-  const { header, values } = contents;
-  return (
-    <>
-      <motion.header
-        initial={false}
-        onClick={() => setExpanded(isOpen ? false : id)}
-      >
-        {header}
-        <svg
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
-            d="M11.9999 13.9394L17.4696 8.46973L18.5303 9.53039L11.9999 16.0607L5.46961 9.53039L6.53027 8.46973L11.9999 13.9394Z"
-            fill="#080341"
-          />
-        </svg>
-      </motion.header>
-      <AnimatePresence initial={false}>
-        {isOpen && (
-          <motion.section
-            key="content"
-            initial="collapsed"
-            animate="open"
-            exit="collapsed"
-            variants={{
-              open: { opacity: 1, height: "auto" },
-              collapsed: { opacity: 0, height: 0 },
-            }}
-            transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
-          >
-            <div className="accordion__tags-section">
-              {values.map(({ label, bgColor, color }) => (
-                <span
-                  style={{
-                    backgroundColor: bgColor,
-                    color: color,
-                    display: "inline-block",
-                  }}
-                  className="accordion__tag"
-                >
-                  {label}
-                </span>
-              ))}
-            </div>
-          </motion.section>
-        )}
-      </AnimatePresence>
-    </>
-  );
-};
+// const Accordion = ({ id, expanded, setExpanded, contents }) => {
+//   const isOpen = id === expanded;
+//   const { header, values } = contents;
+//   return (
+//     <>
+//       <motion.header
+//         initial={false}
+//         onClick={() => setExpanded(isOpen ? false : id)}
+//       >
+//         {header}
+//         <svg
+//           width="24"
+//           height="24"
+//           viewBox="0 0 24 24"
+//           fill="none"
+//           xmlns="http://www.w3.org/2000/svg"
+//         >
+//           <path
+//             fill-rule="evenodd"
+//             clip-rule="evenodd"
+//             d="M11.9999 13.9394L17.4696 8.46973L18.5303 9.53039L11.9999 16.0607L5.46961 9.53039L6.53027 8.46973L11.9999 13.9394Z"
+//             fill="#080341"
+//           />
+//         </svg>
+//       </motion.header>
+//       <AnimatePresence initial={false}>
+//         {isOpen && (
+//           <motion.section
+//             key="content"
+//             initial="collapsed"
+//             animate="open"
+//             exit="collapsed"
+//             variants={{
+//               open: { opacity: 1, height: "auto" },
+//               collapsed: { opacity: 0, height: 0 },
+//             }}
+//             transition={{ duration: 0.8, ease: [0.04, 0.62, 0.23, 0.98] }}
+//           >
+//             <div className="accordion__tags-section">
+//               {values.map(({ label, bgColor, color }) => (
+//                 <span
+//                   style={{
+//                     backgroundColor: bgColor,
+//                     color: color,
+//                     display: "inline-block",
+//                   }}
+//                   className="accordion__tag"
+//                 >
+//                   {label}
+//                 </span>
+//               ))}
+//             </div>
+//           </motion.section>
+//         )}
+//       </AnimatePresence>
+//     </>
+//   );
+// };
 
 const AboutMe: React.FunctionComponent = () => {
-  const [expanded, setExpanded] = useState<false | number>(0);
+  // const [expanded, setExpanded] = useState<false | number>(0);
 
   return (
     <div className="aboutMe__wrapper">
