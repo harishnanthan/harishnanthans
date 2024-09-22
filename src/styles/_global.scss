@@ -2,17 +2,6 @@
 @use "variables";
 @use "breakPoints";
 @use "fonts";
-
-// .fullWidth-withPadding {
-//   padding: variables.$global-padding-lp;
-// }
-
-// @media all and (max-width: breakPoints.$vp-mobile) {
-//   .fullWidth-withPadding {
-//     padding: variables.$global-padding;
-//   }
-// }
-
 // BORDERS
 
 .border-b {
@@ -35,12 +24,11 @@
 .accordion__tag {
   background-color: colors.$color--blue30;
   color: colors.$color--white;
-  font-family: fonts.$font-latin--display;
-  font-weight: 500;
+  font-family: fonts.$font-header;
+  font-weight: fonts.$font-semibold;
   border-radius: variables.$border-radius;
   font-size: variables.$font-size--12;
   padding: 0.5rem;
-  text-transform: uppercase;
 }
 
 .green-highlight {

@@ -6,20 +6,20 @@
 .projects {
   padding: variables.$padding;
   .projects__heading {
-    font-family: fonts.$font-latin--display;
+    font-family: fonts.$font-para;
     font-size: variables.$font-size--60;
     padding: 5rem 0rem 1rem;
   }
 
   .projects__desc {
-    font-family: fonts.$font-latin--display;
+    font-family: fonts.$font-para;
     font-size: variables.$font-size--14;
     font-weight: 300;
 
     button {
       margin-top: 1rem;
       text-transform: capitalize;
-      font-family: fonts.$font-latin--display;
+      font-family: fonts.$font-para;
       background-color: colors.$color--blue30;
       color: colors.$color--white;
       font-size: variables.$font-size--15;
@@ -36,13 +36,13 @@
     padding: 5rem 0rem;
 
     h3 {
-      font-family: fonts.$font-latin--display;
+      font-family: fonts.$font-para;
       text-decoration: underline;
       font-size: variables.$font-size--16;
     }
 
     p {
-      font-family: fonts.$font-latin--display;
+      font-family: fonts.$font-para;
       font-size: variables.$font-size--14;
       font-weight: 300;
       margin-top: 1rem;
@@ -106,7 +106,7 @@
   .next_projects__wrapper {
     margin-bottom: 2rem;
     h2 {
-      font-family: fonts.$font-latin--display;
+      font-family: fonts.$font-para;
       text-decoration: underline;
       font-size: variables.$font-size--16;
       margin-bottom: 2rem;

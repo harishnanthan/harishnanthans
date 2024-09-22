@@ -9,59 +9,37 @@
   .home_intro {
     .home_intro_h1 {
       margin-bottom: 5rem;
-      font-size: variables.$font-size--90;
-      font-family: fonts.$font-latin--display;
-      font-weight: 500;
-
-      .home_intro_h1-underline {
-        position: relative;
-        &::after {
-          z-index: -1;
-          content: "";
-          position: absolute;
-          height: 0.7rem;
-          width: 99%;
-          bottom: .5rem;
-          background-color: colors.$color--blue30;
-          transform: translateX(-100.5%);
-        }
-      }
-
-      // i {
-      //   font-weight: 100;
-      //   font-family: fonts.$font-latin--extra-light;
-      // }
+      font-size: variables.$font-size--50;
+      font-family: fonts.$font-header;
+      font-weight: fonts.$font-bold;
+      color: rgb(18 22 27 / 1);
     }
 
     .home_intro_p {
       margin: 3rem 0;
-      margin-left: 1rem;
-      font-size: variables.$font-size--18;
-      font-family: fonts.$font-latin--display;
-      font-weight: 300;
-      width: 70%;
-      text-align: justify;
-      letter-spacing: .005rem;
-
-      // b{
-      //   font-family: fonts.$font-latin--display;
-      //   font-weight: 600;
-      //   font-style: italic;
-      //   text-decoration: underline;
-      // }
+      font-size: variables.$font-size--16;
+      font-family: fonts.$font-para;
+      font-weight: fonts.$font-regular;
+      line-height: 140%;
+      width: 90%;
+      color: rgb(51 51 51 / 1);
     }
   }
 
   button {
-    margin-left: 1rem;
-    font-family: fonts.$font-latin--display;
-    background-color: colors.$color--blue30;
-    color: colors.$color--white;
-    font-size: variables.$font-size--15;
+    background-color: colors.$color--black;
+    font-size: variables.$font-size--16;
     border-radius: variables.$border-radius;
     outline: none;
     border: none;
-    padding: .8rem 1.2rem;
+    padding: 0.8rem 1.2rem;
+    cursor: pointer;
+    a {
+      font-family: fonts.$font-para;
+      font-weight: fonts.$font-regular;
+      text-decoration: none;
+      color: colors.$color--white;
+    }
   }
 }
 
@@ -77,11 +55,6 @@
         width: 100%;
         margin: 2rem 0;
         font-size: 1.5rem;
-        &::first-letter {
-          font-size: 1.7rem;
-          font-family: fonts.$ff-headings;
-          font-weight: 600;
-        }
       }
 
       .home_intro_social_links {

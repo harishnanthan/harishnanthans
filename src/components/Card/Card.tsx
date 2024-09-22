@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import "./Card.scss";
 import { useNavigate } from "react-router-dom";
 
@@ -16,20 +15,15 @@ const Card: React.FunctionComponent<CardProps> = (props) => {
   const clickHandler = () => navigate('/projects/title')
 
   return (
-    <motion.div
+    <div
       onClick={clickHandler}
-      initial={{ opacity: 0 }}
-      whileInView={{ opacity: 1 }}
-      transition={{ duration: 1 }}
-      viewport={{ once: false }}
       className="card"
     >
       <>
         <div className="card__img">
-          <motion.img
-            whileHover={{ scale: 1.1 }}
+          <img
             src={titleImageUrl}
-          ></motion.img>
+          ></img>
         </div>
         <div className="card__block">
           <div className="card__title">
@@ -39,7 +33,7 @@ const Card: React.FunctionComponent<CardProps> = (props) => {
           <p className="card__desc">{smallDescription}</p>
         </div>
       </>
-    </motion.div>
+    </div>
   );
 };
 

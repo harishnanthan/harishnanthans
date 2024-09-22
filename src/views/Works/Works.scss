@@ -9,10 +9,11 @@
   .works__content {
 
     .works__content-h2 {
-      font-family: fonts.$font-latin--display;
-      font-size: variables.$font-size--28;
-      font-weight: 500;
+      font-family: fonts.$font-header;
+      font-size: variables.$font-size--24;
+      font-weight: fonts.$font-bold;
       margin-bottom: 3rem;
+      text-transform: lowercase;
     }
 
     .works__content-cards {

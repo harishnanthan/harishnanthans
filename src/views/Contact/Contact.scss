@@ -9,15 +9,20 @@
     padding: 2rem 0;
 
     .contact__content-h2 {
-      font-family: fonts.$font-latin--display;
-      font-size: variables.$font-size--30;
-      margin-bottom: 2rem;
+      font-family: fonts.$font-header;
+      font-size: variables.$font-size--24;
+      font-weight: fonts.$font-bold;
+      margin-bottom: 1rem;
+      text-transform: lowercase;
     }
 
     p {
-      font-family: fonts.$font-latin--display;
-      font-size: variables.$font-size--18;
-      font-weight: 300;
+      font-size: variables.$font-size--16;
+      font-family: fonts.$font-para;
+      font-weight: fonts.$font-regular;
+      line-height: 140%;
+      text-align: justify;
+      color: rgb(51 51 51 / 1);
     }
   }
 
@@ -31,13 +36,13 @@
         border: none;
         border-bottom: 1px solid #d1d1d1;
         font-size: 1.4rem;
-        font-family: fonts.$font-latin--display;
+        font-family: fonts.$font-para;
         font-weight: 300;
       }
 
       button {
-        font-family: fonts.$font-latin--display;
-        background-color: colors.$color--blue30;
+        font-family: fonts.$font-para;
+        background-color: colors.$color--black;
         color: colors.$color--white;
         font-size: variables.$font-size--15;
         border-radius: variables.$border-radius;

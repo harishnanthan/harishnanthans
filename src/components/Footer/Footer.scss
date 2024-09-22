@@ -11,8 +11,9 @@
     margin: 0;
     font-size: variables.$font-size--14;
     list-style: none;
-    font-family: fonts.$font-latin--display;
-    font-weight: 500;
+    font-family: fonts.$font-header;
+    font-weight: fonts.$font-bold;
+    text-transform: lowercase;
 
     display: flex;
     padding: 0;

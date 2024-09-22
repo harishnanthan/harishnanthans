@@ -11,24 +11,21 @@
     margin-bottom: 3rem;
 
     .aboutMe__content-h2 {
-      font-family: fonts.$font-latin--display;
-      font-size: variables.$font-size--30;
+      font-family: fonts.$font-header;
+      font-size: variables.$font-size--24;
+      font-weight: fonts.$font-bold;
       margin-bottom: 1rem;
-    }
-
-    .aboutMe__content-h3 {
-      font-family: fonts.$font-latin--display;
-      font-size: variables.$font-size--18;
-      font-weight: 400;
+      text-transform: lowercase;
     }
   }
 
   .aboutMe__content-p {
-    font-size: variables.$font-size--15;
-    font-family: fonts.$font-latin--display;
-    line-height: variables.$basic-line-height;
+    font-size: variables.$font-size--16;
+    font-family: fonts.$font-para;
+    font-weight: fonts.$font-regular;
+    line-height: 140%;
     text-align: justify;
-    font-weight: 300;
+    color: rgb(130 130 130 / 1);
   }
 
   .aboutMe__workBlock {
@@ -46,22 +43,28 @@
         transform: translateY(-50%);
       }
       .workBlock__wrapper-number {
-        font-family: fonts.$font-latin--display;
+        font-family: fonts.$font-header;
         font-size: variables.$font-size--16;
         margin-bottom: 0.5rem;
       }
 
       .workBlock__wrapper-content {
         h3 {
-          font-family: fonts.$font-latin--display;
+          font-family: fonts.$font-header;
+          font-weight: fonts.$font-semibold;
+          text-transform: lowercase;
           font-size: variables.$font-size--16;
           margin-bottom: 1rem;
         }
 
         p {
-          font-family: fonts.$font-latin--display;
+          font-family: fonts.$font-para;
+          max-width: 95%;
+          text-align: justify;
           font-size: variables.$font-size--14;
-          font-weight: 300;
+          font-weight: fonts.$font-regular;
+          line-height: 140%;
+          color: rgb(130 130 130 / 1);
         }
       }
     }
@@ -73,7 +76,7 @@
 
     header {
       font-size: variables.$font-size--18;
-      font-family: fonts.$font-latin--display;
+      font-family: fonts.$font-para;
       display: flex;
       cursor: pointer;
       padding: 2rem;
@@ -81,67 +84,31 @@
   }
 
   .aboutMe__testimonials-Block {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-areas:
-      "card1 card1 card1 card2 card2"
-      "card3 card3 card4 card4 card4";
-    gap: 3rem;
 
     .testimonial__card {
-      border: variables.$border-width--small solid colors.$color--grey10;
-      font-family: fonts.$font-latin--display;
-      font-weight: 300;
-      height: auto;
-      border-radius: variables.$border-radius;
-
-      .testimonial__card-border {
-        padding: 1rem;
-        border-radius: variables.$border-radius;
-        height: 100%;
-
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-      }
-
-      .testimonial__card-card {
-        font-size: variables.$font-size--14;
-      }
-
-      .testimonial__card-who {
-        margin-top: 2rem;
+      margin: 2rem 0;
+      border-bottom: 1px solid rgb(184, 184, 184);
+      .testimonial__card_title {
+        cursor: pointer;
+        font-family: fonts.$font-header;
+        font-weight: fonts.$font-semibold;
+        font-size: variables.$font-size--16;
+        color: rgb(18 22 27 / 1);
+        line-height: 28px;
+        margin: 1rem 0;
         display: flex;
         align-items: center;
-        gap: 1rem;
-
+        gap: .5rem;
         img {
-          width: 3.8rem;
-          aspect-ratio: 1 / 1;
-          border-radius: 50%;
-          border: variables.$border-width--small solid colors.$color--black;
-          filter: grayscale(100%);
+          width: 1.5rem;
+          height: 1.5rem;
         }
-
-        .testimonial__card-who-is {
-          h3 {
-            font-family: fonts.$font-latin--display;
-            font-size: variables.$font-size--16;
-            font-weight: 500;
-
-            img {
-              border-radius: inherit;
-              border: inherit;
-              margin-left: 0.5rem;
-              display: inline;
-              width: 1.4rem;
-              width: 1.4rem;
-            }
-          }
-          p {
-            font-size: variables.$font-size--14;
-          }
-        }
+      }
+      .testimonial__card__content {
+        font-family: fonts.$font-para;
+        font-size: variables.$font-size--14;
+        color: rgb(130 130 130 / 1);
+        margin: .8rem 0;
       }
     }
   }

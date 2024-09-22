@@ -5,7 +5,7 @@ const Contact: React.FunctionComponent = () => {
     <div className="contact__wrapper fullWidth-withPadding">
       <div className="contact__content">
         <h2 className="contact__content-h2">let's connect!</h2>
-        <p className="green-highlight">Ideas are like pizza 🍕 — better shared! Send me your thoughts.</p>
+        <p>Ideas are like pizza 🍕 — better shared! Send me your thoughts.</p>
       </div>
       <div className="contact__wrapper-block">
       <form className="contact__form">
