@@ -14,6 +14,9 @@ importers:
       node-sass:
         specifier: ^9.0.0
         version: 9.0.0
+      nodemailer:
+        specifier: ^6.9.15
+        version: 6.9.15
       octokit:
         specifier: ^4.0.2
         version: 4.0.2
@@ -1440,6 +1443,10 @@ packages:
     resolution: {integrity: sha512-yltEuuLrfH6M7Pq2gAj5B6Zm7m+gdZoG66wTqG6mIZV/zijq3M2OO2HswtT6oBspPyFhHDcaxWpsBm0fRNDHPg==}
     engines: {node: '>=16'}
     hasBin: true
+
+  nodemailer@6.9.15:
+    resolution: {integrity: sha512-AHf04ySLC6CIfuRtRiEYtGEXgRfa6INgWGluDhnxTZhHSKvrBu7lc1VVchQ0d8nPc4cFaZoPq8vkyNoZr0TpGQ==}
+    engines: {node: '>=6.0.0'}
 
   nopt@5.0.0:
     resolution: {integrity: sha512-Tbj67rffqceeLpcRXrT7vKAN8CwfPeIBgM7E6iBkmKLV7bEMwpGgYLGv0jACUsECaa/vuxP0IjEont6umdMgtQ==}
@@ -3454,6 +3461,8 @@ snapshots:
     transitivePeerDependencies:
       - bluebird
       - supports-color
+
+  nodemailer@6.9.15: {}
 
   nopt@5.0.0:
     dependencies:

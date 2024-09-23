@@ -1,45 +1,44 @@
 import "./AboutMe.scss";
 // import { WORK_FLOW } from "../../constants";
 
-const testimonials = [
-  {
-    id: 1,
-    img: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    content:
-      '"An exceptional developer with a keen eye for detail. His ability to solve complex problems while maintaining clean, scalable code is unmatched. Truly a pleasure to work with."',
-    name: "Sara Johnson",
-    position: "Lead Developer",
-    at: "TechCorp",
-  },
-  {
-    id: 2,
-    img: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    content:
-      '"He consistently delivers beyond expectations, bringing both speed and efficiency to every project. His contributions have been pivotal to our success."',
-    name: "Michael Lee",
-    position: "CTO",
-    at: "InnovateX",
-  },
-  {
-    id: 3,
-    img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    content:
-      '"A skilled frontend engineer who brings both creativity and technical expertise to the table. His focus on performance and usability has drastically improved our user experience."',
-    name: "Emily Davis",
-    position: "Product Manager",
-    at: "BrightSoft",
-  },
-  {
-    id: 4,
-    img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    content:
-      '"A true team player and problem solver. He has a unique ability to translate complex requirements into clean, efficient code. His impact on our projects has been significant."',
-    name: "James Anderson",
-    position: "Engineering Manager",
-    at: "DevWorks",
-  },
-];
-
+// const testimonials = [
+//   {
+//     id: 1,
+//     img: "https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+//     content:
+//       '"An exceptional developer with a keen eye for detail. His ability to solve complex problems while maintaining clean, scalable code is unmatched. Truly a pleasure to work with."',
+//     name: "Sara Johnson",
+//     position: "Lead Developer",
+//     at: "TechCorp",
+//   },
+//   {
+//     id: 2,
+//     img: "https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+//     content:
+//       '"He consistently delivers beyond expectations, bringing both speed and efficiency to every project. His contributions have been pivotal to our success."',
+//     name: "Michael Lee",
+//     position: "CTO",
+//     at: "InnovateX",
+//   },
+//   {
+//     id: 3,
+//     img: "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+//     content:
+//       '"A skilled frontend engineer who brings both creativity and technical expertise to the table. His focus on performance and usability has drastically improved our user experience."',
+//     name: "Emily Davis",
+//     position: "Product Manager",
+//     at: "BrightSoft",
+//   },
+//   {
+//     id: 4,
+//     img: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+//     content:
+//       '"A true team player and problem solver. He has a unique ability to translate complex requirements into clean, efficient code. His impact on our projects has been significant."',
+//     name: "James Anderson",
+//     position: "Engineering Manager",
+//     at: "DevWorks",
+//   },
+// ];
 
 const AboutMe: React.FunctionComponent = () => {
   return (
@@ -47,29 +46,52 @@ const AboutMe: React.FunctionComponent = () => {
       <div className="aboutMe__content">
         <h2 className="aboutMe__content-h2">About Me</h2>
         <p className="aboutMe__content-p">
-          I’m Harish, a Frontend Engineer at Tekion India Pvt Ltd, where I focus
-          on building fast, scalable web applications with clean, maintainable
-          code. At Tekion, I’ve optimized React-based client applications,
-          reducing bugs by 20% and improving load times for a smoother user
-          experience. I also created a custom toolkit that cut project setup
-          time by 70%, streamlining the development process.
+          Hi, I’m Harish, a passionate Frontend Engineer at Tekion based on India, where I
+          focus on building fast, scalable web applications with clean,
+          maintainable code. I’ve been working on optimizing our client
+          applications using React. At Tekion, I’ve had the chance to lead some
+          pretty exciting initiatives, like creating a custom toolkit that sped
+          up project setup by 70%. This has really helped streamline the
+          onboarding process for new projects, saving us tons of development
+          time. I’ve also been working on improving the stability of our
+          apps—cutting bugs by 20% and reducing load times by 4% across various
+          modules. It’s all about delivering a smoother, better user experience!
+          Besides my technical work, I enjoy mentoring junior developers through
+          code reviews and pair programming. It’s rewarding to see their growth
+          and how it boosts the entire team’s productivity.
           <br />
           <br />
-          I’ve led key projects like the Global Feature Tracker, revamping a
-          dealer feature management system that boosted performance by 35%.
-          During a hackathon, I also developed Dealer Community, an AI-powered
-          platform that reduced support tickets by 80% and increased user
-          engagement.
+          I’ve contributed to some awesome projects like the Global Feature
+          Tracker, where I revamped a dealer feature management system. This led
+          to a 25% performance improvement and a 10% reduction in deployment
+          times. One of my proudest moments, though, was leading a team during a
+          hackathon to develop Dealer Community—an online platform inspired by
+          Stack Overflow. We built real-time knowledge sharing features and
+          integrated an AI-driven auto-answer system, cutting support tickets by
+          30%!
           <br />
           <br />
-          My tech stack includes JavaScript, TypeScript, React, Redux, Webpack,
-          and Node.js. I’m passionate about writing clean, modular code that’s
-          easy to maintain and scale.
+          When it comes to tech, I’m proficient in JavaScript, TypeScript,
+          React, Redux, Webpack, and more. I’ve also dabbled in backend
+          development with Node.js, MySQL, and MongoDB. For design and version
+          control, Figma and Git are my go-to tools.
           <br />
           <br />
-          I’m best reachable through mail, feel free to reach out about any
-          opportunities or to simply say hi! I’m also somewhat active on
-          Twitter.
+          I’m all about writing code that’s not just functional but clean,
+          scalable, and maintainable. I believe well-documented and modular code
+          is key to a successful project, especially when scaling. I always aim
+          to make the code easier for the next developer who works with it
+          (including future me!).
+          <br />
+          <br />
+          When I’m not coding, I love exploring new tech, reading up on frontend
+          best practices, or tinkering with developer tools. Outside of tech,
+          you’ll probably find me with a good book, trying out new recipes, or
+          taking care of my (mostly thriving) houseplants.
+          <br />
+          <br />
+          Feel free to reach out if you want to chat about opportunities,
+          collaborate on projects, or just say hi!
         </p>
       </div>
 
@@ -93,7 +115,7 @@ const AboutMe: React.FunctionComponent = () => {
         </div>
       </> */}
 
-      <>
+      {/* <>
         <div className="aboutMe__content">
           <h2 className="aboutMe__content-h2">What people says?</h2>
           <div className="aboutMe__testimonials-Block">
@@ -110,7 +132,7 @@ const AboutMe: React.FunctionComponent = () => {
             ))}
           </div>
         </div>
-      </>
+      </> */}
     </div>
   );
 };

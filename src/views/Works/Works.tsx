@@ -1,5 +1,5 @@
-import Card from "../../components/Card";
-import { WORKS } from "../../constants";
+// import Card from "../../components/Card";
+// import { WORKS } from "../../constants";
 import "./Works.scss";
 
 const Works: React.FunctionComponent = () => {
@@ -8,7 +8,8 @@ const Works: React.FunctionComponent = () => {
       <div className="works__content">
         <h2 className="works__content-h2">Selected Works</h2>
         <div className="works__content-cards">
-          {WORKS.map((repo) => (
+          <h1>I'm working on it. In the meantime, please check <a href="https://github.com/harishnanthan">Github</a>...</h1>
+          {/* {WORKS.map((repo) => (
             <Card
               key={repo.title}
               title={repo.title}
@@ -16,7 +17,7 @@ const Works: React.FunctionComponent = () => {
               smallDescription={repo.smallDescription}
               titleImageUrl={repo.titleImageUrl}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>

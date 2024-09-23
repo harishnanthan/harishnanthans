@@ -23,9 +23,9 @@
     font-size: variables.$font-size--16;
     font-family: fonts.$font-para;
     font-weight: fonts.$font-regular;
-    line-height: 140%;
+    line-height: 170%;
     text-align: justify;
-    color: rgb(130 130 130 / 1);
+    color: rgb(51 51 51 / 1);
   }
 
   .aboutMe__workBlock {
@@ -63,7 +63,7 @@
           text-align: justify;
           font-size: variables.$font-size--14;
           font-weight: fonts.$font-regular;
-          line-height: 140%;
+          line-height: 170%;
           color: rgb(130 130 130 / 1);
         }
       }
